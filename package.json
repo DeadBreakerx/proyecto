@@ -1,0 +1,30 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "proyecto de node y react",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "npx babel src/ --out-dir dist",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "node",
+    "react"
+  ],
+  "author": "Bleader",
+  "license": "MIT",
+  "dependencies": {
+    "D": "^1.0.0",
+    "express": "^4.18.2",
+    "mysql2": "^3.4.3",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5"
+  }
+}
