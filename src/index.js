@@ -6,6 +6,8 @@ import rutasAuth from "./auth.routes"
 
 const app = express();
 
+app.use(express.json()); //para capturar datos (req.body) PARACONSULTAS
+
 //habilitamos las rutas con express(app)
 app.use("/api", rutasAuth) //rutas o urls de autenticación
 
